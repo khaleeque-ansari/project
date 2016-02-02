@@ -142,6 +142,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
+
+        //Testing
         btnLoginSignup.setText(Html.fromHtml("<p >Not a member yet? <u style=\"color:blue;\">Register</u></p>"));
         btnLoginSignup.setOnClickListener(new View.OnClickListener() {
             @Override
