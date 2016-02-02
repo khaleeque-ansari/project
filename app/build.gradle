@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'firsteat'
+            keyPassword 'fe#pehlekhao'
+            storePassword 'fe#pehlekhao'
+            storeFile file('/Users/apple/Desktop/Pallaw/First EAT/Documents/firsteat.jks')
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+    defaultConfig {
+        applicationId "com.firsteat.firsteat"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 3
+        versionName "1.2"
+        multiDexEnabled true;
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+repositories { mavenCentral() }
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22+'
+    compile 'com.android.support:design:22+'
+    compile 'com.android.support:recyclerview-v7:22+'
+    compile 'com.android.support:cardview-v7:+'
+    compile 'com.google.code.gson:gson:2.5'
+    compile 'me.neavo:volley:2014.12.09'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+    compile 'com.wefika:horizontal-picker:1.1.0'
+    compile 'org.solovyev.android.views:linear-layout-manager:0.5@aar'
+    compile 'com.android.support:multidex:1.0.0'
+}

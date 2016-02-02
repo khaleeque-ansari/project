@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_menu"
+            android:title="Menu" />
+        <item
+            android:id="@+id/nav_order"
+            android:title="My Order" />
+        <item
+            android:id="@+id/nav_referal"
+            android:title="Refer A Friend" />
+       <!-- <item
+            android:id="@+id/nav_favorites"
+            android:title="Favorites" />-->
+        <item
+            android:id="@+id/nav_about_us"
+            android:title="About us" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:title="Contact us" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="Rate us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+
+
+
+
+
+
+
+    </group>
+
+
+
+</menu>

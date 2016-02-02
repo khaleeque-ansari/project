@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        android:layout_marginTop="9dp"
+        android:padding="10dp"
+        android:layout_marginBottom="0dp">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:id="@+id/c1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/imgRVCartMinus"
+                    android:background="@drawable/icn_down"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/txtRVCartCounter"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/imgRVCartMinus"
+                    android:layout_toStartOf="@+id/imgRVCartMinus"
+                    android:layout_margin="2dp" />
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/imgRVCartPlus"
+                    android:background="@drawable/icn_up"
+                    android:layout_alignBottom="@+id/txtCO_ConfirmOrder"
+                    android:layout_toRightOf="@+id/txtCO_ConfirmOrder"
+                    android:layout_toEndOf="@+id/txtCO_ConfirmOrder" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/c2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imgRVCartThumb"
+                    android:src="#781111"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"/>
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imgRVCartFoodType"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/imgRVCartThumb"
+                    android:background="#0f6b74"
+
+                    />
+
+
+
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_toLeftOf="@+id/c1"
+               android:layout_toRightOf="@+id/c2"
+               android:paddingLeft="5dp">
+               <TextView
+                   android:layout_toLeftOf="@id/c1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:text="Zero oil egg sandwich"
+                   android:id="@+id/txtCO_ConfirmOrder"
+                   android:layout_marginTop="5dp"
+                   android:layout_alignParentTop="true"
+                   android:layout_toRightOf="@id/c2"/>
+
+               <TextView
+                   android:layout_toLeftOf="@id/c1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Rs. 65"
+                   android:id="@+id/txtAddressLine1"
+                   android:layout_below="@+id/txtCO_ConfirmOrder"
+                   android:layout_alignLeft="@+id/txtCO_ConfirmOrder"
+                   android:layout_alignStart="@+id/txtCO_ConfirmOrder" />
+
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                   android:id="@+id/RlAddedItem1"
+                   android:visibility="invisible">
+                   <CheckBox
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/chkCartItem1"
+                       android:layout_alignParentLeft="true"
+                       android:layout_alignParentStart="true"
+                       android:checked="false" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="?android:attr/textAppearanceSmall"
+                       android:text="Added Item 1"
+                       android:id="@+id/txtRVCartAdded1"
+                       android:layout_centerVertical="true"
+                       android:layout_toRightOf="@+id/chkCartItem1"
+                       android:layout_toEndOf="@+id/chkCartItem1" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="?android:attr/textAppearanceSmall"
+                       android:text="Rs. 30"
+                       android:id="@+id/txtRVCartAdded1Price"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentEnd="true" />
+
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical"
+                   android:id="@+id/RlAddedItem2"
+                   android:layout_below="@+id/RlAddedItem1"
+                   android:layout_alignRight="@+id/RlAddedItem1"
+                   android:layout_alignEnd="@+id/RlAddedItem1"
+                   android:layout_alignLeft="@+id/RlAddedItem1"
+                   android:layout_alignStart="@+id/RlAddedItem1"
+                   android:visibility="invisible">
+
+                   <CheckBox
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/chkCartItem2"
+                       android:layout_alignParentLeft="true"
+                       android:layout_alignParentStart="true"
+                       android:checked="false" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="?android:attr/textAppearanceSmall"
+                       android:text="Added Item 1"
+                       android:id="@+id/txtRVCartAdded2"
+                       android:layout_centerVertical="true"
+                       android:layout_toRightOf="@+id/chkCartItem2"
+                       android:layout_toEndOf="@+id/chkCartItem2" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="?android:attr/textAppearanceSmall"
+                       android:text="Rs. 30"
+                       android:id="@+id/txtRVCartAdded2Price"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentEnd="true" />
+               </RelativeLayout>
+           </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

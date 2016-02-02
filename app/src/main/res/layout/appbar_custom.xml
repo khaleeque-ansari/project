@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tollbarMainCustom"
+    android:weightSum="11"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:padding="4dp"
+    android:orientation="horizontal">
+
+
+
+    <Spinner
+        android:id="@+id/spiMainLocation"
+        android:layout_weight="11"
+        android:layout_alignParentLeft="true"
+        android:layout_width="0dp"
+        android:paddingLeft="25dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_spinner"
+        android:layout_marginRight="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgSpecialNotification"
+        android:background="@drawable/icn_notification"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="10dp" />
+
+</LinearLayout>

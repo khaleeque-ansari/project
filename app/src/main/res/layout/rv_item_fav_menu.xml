@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        card_view:cardElevation="0.01dp"
+        android:layout_marginBottom="0dp">
+        <RelativeLayout
+            android:id="@+id/fm_top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fm_img_thumbnail"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:clickable="true"
+                android:foregroundTint="#c1131313"
+
+                android:src="@drawable/img"/>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fm_img_thumbnail"
+                android:id="@+id/relativeLayout"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingBottom="10dp"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zero oil Egg Sandwich"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/fm_txtName"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 65"
+                    android:id="@+id/fm_txtPrice"
+                    android:layout_below="@id/fm_txtName"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:layout_below="@+id/fm_txtPrice"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp">
+
+                    <!-- container cal.-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="75dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:id="@+id/imgCal"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="65dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/circle_color_primary"/>
+                            <TextView
+                                android:id="@+id/fm_txtCal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:text="0"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_below="@id/imgCal"
+                            android:layout_height="15dp"
+                            android:gravity="center_horizontal"
+                            android:text="Cal"/>
+                    </RelativeLayout>
+                    <!-- container cal.-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="75dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:id="@+id/imgCal2"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/circle_color_primary"/>
+                            <TextView
+                                android:id="@+id/fm_txtFiber"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:text="0"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_below="@id/imgCal2"
+                            android:layout_height="15dp"
+                            android:gravity="center_horizontal"
+                            android:text="Fiber."/>
+                    </RelativeLayout>
+                    <!-- container cal.-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="75dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:id="@+id/imgCal3"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="75dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/circle_color_primary"/>
+                            <TextView
+                                android:id="@+id/fm_txtCarb"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:text="0"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_below="@id/imgCal3"
+                            android:layout_height="15dp"
+                            android:gravity="center_horizontal"
+                            android:text="Carb."/>
+                    </RelativeLayout>
+                    <!-- container cal.-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="75dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:id="@+id/imgCal4"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="75dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/circle_color_primary"/>
+                            <TextView
+                                android:id="@+id/fm_txtProtein"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:text="0"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_below="@id/imgCal4"
+                            android:layout_height="15dp"
+                            android:gravity="center_horizontal"
+                            android:text="Protein"/>
+                    </RelativeLayout>
+                    <!-- container cal.-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="75dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:id="@+id/imgCal5"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="75dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/circle_color_primary"/>
+                            <TextView
+                                android:id="@+id/fm_txtFat"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:text="0"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_below="@id/imgCal5"
+                            android:layout_height="15dp"
+                            android:gravity="center_horizontal"
+                            android:text="Fat"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--frame for buttons over images-->
+            <!--Details frame-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/relativeLayout"
+                android:visibility="visible">
+
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:orientation="vertical"
+                   android:background="@android:color/black"
+                   android:alpha="0.5"
+                   android:gravity="center"
+                   android:visibility="gone"
+                   android:id="@+id/fm_frameImgDetails">
+                   <TextView
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="?android:attr/textAppearanceLarge"
+                       android:text="Product Description"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:textColor="#ffffff"
+                       android:textStyle="bold" />
+                   <TextView
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="?android:attr/textAppearanceMedium"
+                       android:text="Medium Text"
+                       android:id="@+id/fm_txtDetails"
+                       android:layout_gravity="center"
+                       android:textColor="#ffffff"
+                       android:gravity="center"
+                      />
+                   <TextView
+                       android:layout_marginTop="10dp"
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="?android:attr/textAppearanceLarge"
+                       android:text="Best Suited For"
+                       android:layout_gravity="center"
+                       android:textColor="#ffffff"
+                       android:gravity="center"
+                       android:textStyle="bold" />
+                   <TextView
+                       android:id="@+id/fm_txtBestSuited"
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="?android:attr/textAppearanceMedium"
+                       android:text="for fitness freeks"
+                       android:layout_gravity="center"
+                       android:textColor="#ffffff"
+                       android:gravity="center"
+                       />
+               </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_above="@+id/relativeLayout"
+                    android:visibility="visible"
+                    android:id="@+id/fm_frameImgBtns">
+
+                    <TextView
+                        android:id="@+id/fm_tv_stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:layout_gravity="right|top"
+                        android:gravity="center_vertical"
+                        android:textColor="#fff"
+                        android:text="sold out"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/icn_egg_up"
+                        android:layout_alignTop="@+id/btnFav"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left|top"
+                        android:id="@+id/fm_imgRv_menu_category" />
+
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/fm_frameClickable"
+                android:layout_above="@+id/relativeLayout"
+                android:visibility="visible"></FrameLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
