@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -63,6 +64,7 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
     int mainItemCount=0,offerItemCount=0,mainItemTotal=0,offerItemTotal=0;
     private String couponId="";
     private boolean isPointRedeemed=false;
+    private Button btnConfirm;
 
 
     @Override
@@ -91,6 +93,7 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
         edtCO_CoupounCode= (EditText) findViewById(R.id.edtCO_CoupounCode);
         txtCO_TotalPrice= (TextView) findViewById(R.id.txtCO_TotalPrice);
         btnCO_CoupounCode= (Button) findViewById(R.id.btnCO_CoupounCode);
+        btnConfirm= (Button) findViewById(R.id.btnConfirm);
         btnCO_ReedeamPoint= (Button) findViewById(R.id.btnCO_ReedeamPoint);
         txtCO_Redeem= (TextView) findViewById(R.id.txtCO_Redeem);
 
@@ -210,6 +213,7 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(PreConfirmOrder.this, "Server error", Toast.LENGTH_LONG).show();
                 dialogOrderItems.dismiss();
                 Log.d(TAG, "error in place new order response " + error.toString());
             }
@@ -247,8 +251,12 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+
+                Toast.makeText(PreConfirmOrder.this,"Server error",Toast.LENGTH_LONG).show();
                 dialogOrderItems.dismiss();
                 Log.d(TAG, "Something went wrong \nOrder items were not added successfully try again");
+                //rollback order
+                rollBackOrder(orderId);
             }
         });
         AppController.getInstance().addToRequestQueue(requestAddOrderitems);
@@ -256,6 +264,30 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
 
 
 
+    }
+
+    /*
+    * Rollback the order if any error occured during placing order
+    * */
+    private void rollBackOrder(final String orderId) {
+        String url=Constants.getUrlRollbackOrder(orderId);
+        JsonObjectRequest rollBackOrderRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject jsonObject) {
+                Log.d(TAG,"Previous order is cancelled order id ="+orderId);
+                DialogUtils.showDialog(PreConfirmOrder.this,"We are sorry we couldn't place your order try again");
+                btnConfirm.setEnabled(true);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                Toast.makeText(PreConfirmOrder.this,"server error",Toast.LENGTH_SHORT).show();
+                Log.d(TAG,"Cancellation of order is failed order id ="+orderId);
+                DialogUtils.showDialog(PreConfirmOrder.this,"We are sorry we couldn't place your order try again");
+                btnConfirm.setEnabled(true);
+            }
+        });
+        AppController.getInstance().addToRequestQueue(rollBackOrderRequest);
     }
 
     /*
@@ -274,14 +306,17 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
         JsonObjectRequest reqestAddOffers=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Log.d(TAG, "add offers to cart: " + response.toString());
+                Log.d(TAG, "addOffers response: " + response.toString());
                 //update order
                 updateOrder(order_id, String.valueOf(prefs.getInt(TagsPreferences.CART_SUB_TOTAL, 0)));
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                Toast.makeText(PreConfirmOrder.this,"Server error",Toast.LENGTH_LONG).show();
+                Log.d(TAG, "addOffers error: " + error.toString());
+                //rollback order
+                rollBackOrder(orderId);
             }
         });
         AppController.getInstance().addToRequestQueue(reqestAddOffers);
@@ -291,7 +326,7 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
    * Update order
    * 3rd of 3 services for ordering item
    * */
-    private void updateOrder(String orderId, String subTotal) {
+    private void updateOrder(final String orderId, String subTotal) {
         String addId=prefs.getString(TagsPreferences.ADDRESS_ID,"0");
         String timeSlot=prefs.getString(TagsPreferences.TIME_SLOT, "1");
         int total = prefs.getInt(TagsPreferences.TOTAL, 0);
@@ -323,8 +358,11 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(PreConfirmOrder.this,"Server error",Toast.LENGTH_LONG).show();
                 dialogOrderItems.dismiss();
                 Log.d(TAG,"update order response error :"+error.toString());
+                //rollback order
+                rollBackOrder(orderId);
             }
         });
         AppController.getInstance().addToRequestQueue(requestUpdateOrder);
@@ -439,6 +477,7 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(PreConfirmOrder.this,"server error",Toast.LENGTH_SHORT).show();
                 Log.d(TAG, "requestDistenceMatrix error :" + error.toString());
             }
         });
@@ -525,6 +564,7 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(PreConfirmOrder.this,"server error",Toast.LENGTH_SHORT).show();
                 pd.dismiss();
                 Log.d(TAG,"getRedeemPoint error: "+error.toString());
             }
@@ -552,10 +592,11 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
     * */
     private void validateCoupouns() {
 
+
         Log.d(TAG, "coupon logic normal");
         String url=Constants.getUrlCoupounValidation(edtCO_CoupounCode.getText().toString().trim(),
                 prefs.getString(TagsPreferences.PROFILE_USER_ID, "0"),
-                String.valueOf(prefs.getInt(TagsPreferences.CART_SUB_TOTAL, 0)), menuItemIdsWithCount);
+                String.valueOf(prefs.getInt(TagsPreferences.CART_SUB_TOTAL, 0)), menuItemIds,menuItemQtys);
                 JsonObjectRequest requestValidatecoupon= new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -581,11 +622,11 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
                         }
 
                     }else if(response.getString("status").equalsIgnoreCase("1")){
-                        DialogUtils.showDialog(PreConfirmOrder.this, "Coupoun not found");
-//                        Toast.makeText(PreConfirmOrder.this,"Coupoun not found",Toast.LENGTH_LONG).show();
+                        DialogUtils.showDialog(PreConfirmOrder.this, "Coupon not found");
+//                        Toast.makeText(PreConfirmOrder.this,"Coupon not found",Toast.LENGTH_LONG).show();
                     }else
-                        DialogUtils.showDialog(PreConfirmOrder.this, "Coupoun not valid for the current item");
-//                        Toast.makeText(PreConfirmOrder.this,"Coupoun not valid for the current item",Toast.LENGTH_LONG).show();
+                        DialogUtils.showDialog(PreConfirmOrder.this, "Coupon not valid for the current item");
+//                        Toast.makeText(PreConfirmOrder.this,"Coupon not valid for the current item",Toast.LENGTH_LONG).show();
 
                     //enable apply coupon button
                     btnCO_CoupounCode.setEnabled(true);
@@ -598,7 +639,10 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(PreConfirmOrder.this,"Server error",Toast.LENGTH_LONG).show();
                 //enable apply coupon button
+                btnCO_CoupounCode.setEnabled(true);
+                DialogUtils.showDialog(PreConfirmOrder.this,"Sorry the coupon is not applied try again");
                 Log.d(TAG,"validateCoupouns error :"+error.toString());
             }
         });
@@ -733,6 +777,7 @@ public class PreConfirmOrder extends AppCompatActivity implements View.OnClickLi
 
                 break;
             case R.id.btnConfirm:
+                btnConfirm.setEnabled(false);
                 getKitechId();
                 break;
             case R.id.btnCO_BringChange_100:

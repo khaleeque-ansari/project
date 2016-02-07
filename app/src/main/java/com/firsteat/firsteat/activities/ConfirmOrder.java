@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -110,6 +111,7 @@ public class ConfirmOrder extends AppCompatActivity implements View.OnClickListe
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(ConfirmOrder.this, "server error", Toast.LENGTH_SHORT).show();
                 Log.d(TAG,"requestOrderDetailPreConfirm error :"+error.toString());
                 DialogUtils.showDialog(context, "something went order summary not downloaded");
             }

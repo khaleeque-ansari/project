@@ -129,6 +129,7 @@ TextView txtSummaryName,txtSummaryAddLine2,txtSummaryAddLine1, txtSummaryDateSta
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(Summary.this,"server error",Toast.LENGTH_SHORT).show();
                 Log.d(TAG,"requestOrderDetail error :"+error.toString());
             }
         });

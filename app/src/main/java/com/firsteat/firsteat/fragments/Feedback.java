@@ -96,6 +96,7 @@ View rootview;
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getActivity(),"Server error",Toast.LENGTH_LONG).show();
                 pd.dismiss();
                 Log.d(TAG,"requestFeedback error"+error.toString());
             }

@@ -144,6 +144,7 @@ public class Favorites extends Fragment {
             @Override
             public void onErrorResponse(VolleyError error) {
                 pd.dismiss();
+                Toast.makeText(getActivity(),"Server error",Toast.LENGTH_LONG).show();
             }
         });
         AppController.getInstance().addToRequestQueue(getFavMenuRequest);

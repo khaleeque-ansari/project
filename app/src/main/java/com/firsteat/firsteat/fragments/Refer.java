@@ -123,6 +123,7 @@ public class Refer extends Fragment implements FragmentManager.OnBackStackChange
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getActivity(),"Server error",Toast.LENGTH_LONG).show();
                 pd.dismiss();
                 Log.d(TAG,"reedeam point error :"+error.toString());
             }

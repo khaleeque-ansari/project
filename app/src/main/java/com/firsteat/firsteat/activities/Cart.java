@@ -28,6 +28,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -191,6 +192,7 @@ public class Cart extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(Cart.this,"Server error",Toast.LENGTH_LONG).show();
                 Log.d(TAG,"fetchTimeSlots error:"+error.toString());
             }
         });
@@ -395,6 +397,7 @@ public class Cart extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 pd.dismiss();
+                Toast.makeText(Cart.this, "Server error", Toast.LENGTH_LONG).show();
                 Log.d(TAG,"error in address json :"+error.toString());
             }
         });

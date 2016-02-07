@@ -3,6 +3,7 @@ package com.firsteat.firsteat.app;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -20,11 +21,13 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 import com.facebook.FacebookSdk;
+import com.firsteat.firsteat.activities.ProductTourActivity;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 import com.firsteat.firsteat.utils.Constants;
 import com.firsteat.firsteat.utils.LruBitmapCache;
 import com.firsteat.firsteat.utils.TagsPreferences;
 
+import java.io.File;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -53,6 +56,9 @@ public class AppController extends Application {
                 .getDefaultSharedPreferences(this);
         FacebookSdk.sdkInitialize(getApplicationContext());
         findKeyHash();
+
+        //check whether to delete Cache or not
+        checkClearCache();
 
 //        findDeviceIdAndGoogleAdId();
 
@@ -100,7 +106,7 @@ public class AppController extends Application {
     private void findKeyHash() {
         try {
             PackageInfo info = getPackageManager().getPackageInfo(
-                    "com.touchmagics.firsteat",
+                    "com.firsteat.firsteat",
                     PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
@@ -156,5 +162,54 @@ public class AppController extends Application {
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
         MultiDex.install(this);
+    }
+
+
+    private void checkClearCache(){
+        int oldVersionCode = Constants.getAppPrefInt(this, "version_code");
+        int currentVersionCode = Constants.getAppVersionCode(this);
+
+        Log.d(TAG,"Old version code: "+oldVersionCode);
+        Log.d(TAG, "Current version code: " + currentVersionCode);
+        //when user will open the app next he will get incremented old version
+        //this scenario is taking place in MainActivity
+
+        if(currentVersionCode>oldVersionCode){
+            //clear cache
+            clearApplicationData();
+        }
+    }
+
+
+    /*
+    * Method to clear cache when applicaation is launched very first time
+    * or application version is changed
+    * */
+    public void clearApplicationData() {
+        File cache = getCacheDir();
+        File appDir = new File(cache.getParent());
+        if (appDir.exists()) {
+            String[] children = appDir.list();
+            for (String s : children) {
+                if (!s.equals("lib")) {
+                    deleteDir(new File(appDir, s));
+                    Log.d("TAG", "**************** File /data/data/APP_PACKAGE/" + s + " DELETED *******************");
+                }
+            }
+        }
+    }
+
+    public static boolean deleteDir(File dir) {
+        if (dir != null && dir.isDirectory()) {
+            String[] children = dir.list();
+            for (int i = 0; i < children.length; i++) {
+                boolean success = deleteDir(new File(dir, children[i]));
+                if (!success) {
+                    return false;
+                }
+            }
+        }
+
+        return dir.delete();
     }
 }

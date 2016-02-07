@@ -286,6 +286,7 @@ public class SignUp extends AppCompatActivity implements LoaderCallbacks<Cursor>
             @Override
             public void onErrorResponse(VolleyError error) {
             pd.dismiss();
+                Toast.makeText(SignUp.this,"Server error",Toast.LENGTH_LONG).show();
                 Log.d(TAG,"error in signup request "+error.toString());
             }
         });
@@ -339,6 +340,8 @@ public class SignUp extends AppCompatActivity implements LoaderCallbacks<Cursor>
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+
+                Toast.makeText(SignUp.this,"Server error",Toast.LENGTH_LONG).show();
                 Log.d(TAG,"getUsersDetails error:"+error.toString());
             }
         });

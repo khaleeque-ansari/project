@@ -22,6 +22,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -198,6 +199,7 @@ public class AddressActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 pd.dismiss();
+                Toast.makeText(AddressActivity.this, "Server error", Toast.LENGTH_LONG).show();
                 Log.d(TAG, "uploadAddtoserver error:" + error.toString());
             }
         });

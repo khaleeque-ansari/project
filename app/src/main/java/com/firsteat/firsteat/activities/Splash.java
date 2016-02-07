@@ -153,7 +153,8 @@ public class Splash extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-        Log.d(TAG,"requestFirstService error"+error.toString());
+                Toast.makeText(Splash.this,"server error",Toast.LENGTH_SHORT).show();
+                Log.d(TAG,"requestFirstService error"+error.toString());
             }
         });
         AppController.getInstance().addToRequestQueue(requestFirstService);
@@ -196,6 +197,7 @@ public class Splash extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(Splash.this,"Server error",Toast.LENGTH_LONG).show();
                 Log.d(TAG, "getSpecialNotification error:" + error.toString());
             }
         });
@@ -279,7 +281,8 @@ public class Splash extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                Toast.makeText(Splash.this,"Server error",Toast.LENGTH_LONG).show();
+                Log.d(TAG,"downloadGoogleGeoCode error:"+error.getMessage());
             }
         });
         AppController.getInstance().addToRequestQueue(requestGooglGeoCode);
@@ -316,7 +319,7 @@ public class Splash extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
 //                pd.dismiss();//close dialog
                 Log.d(TAG, "downloadKitchenRequest error: " + error.getMessage());
-
+                Toast.makeText(Splash.this,"Server error",Toast.LENGTH_LONG).show();
                 progressLayoutSplash.setVisibility(View.GONE);
                 DialogUtils.showDialog(context, "Something Went Wrong. This may be caused by" +
                         "\n1) No Internet Connection" +
@@ -388,6 +391,7 @@ public class Splash extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(Splash.this,"server error",Toast.LENGTH_SHORT).show();
                 Log.d(TAG, "requestDistenceMatrix error :" + error.toString());
             }
         });

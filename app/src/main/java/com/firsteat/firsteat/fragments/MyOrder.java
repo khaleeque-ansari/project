@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -113,6 +114,7 @@ public class MyOrder extends Fragment {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    Toast.makeText(getActivity(), "Server error", Toast.LENGTH_LONG).show();
                     pd.dismiss();
                     Log.d(TAG,"requestMyorder error: "+error.toString());
                 }

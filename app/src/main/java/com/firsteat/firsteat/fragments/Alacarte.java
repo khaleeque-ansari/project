@@ -17,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -268,7 +269,7 @@ public class Alacarte extends Fragment implements AdapterView.OnItemSelectedList
 
     private void downloadMenu() {
         Log.d(TAG,"date before adding in menu all services "+prefs.getString(TagsPreferences.DATE,""));
-        String url=Constants.URL_MENU_ALL_ALACARTE+"?d="+prefs.getString(TagsPreferences.DATE,"");
+        String url=Constants.getUrlMenuAllAlacarte(prefs.getString(TagsPreferences.DATE,""));
         JsonObjectRequest downloadMenuAlacarte=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -311,7 +312,7 @@ public class Alacarte extends Fragment implements AdapterView.OnItemSelectedList
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                Toast.makeText(getActivity(), "Server error", Toast.LENGTH_LONG).show();
             }
         });
         AppController.getInstance().addToRequestQueue(downloadMenuAlacarte);
@@ -367,6 +368,8 @@ public class Alacarte extends Fragment implements AdapterView.OnItemSelectedList
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+
+                Toast.makeText(getActivity(),"Server error",Toast.LENGTH_LONG).show();
                 Log.d(TAG,"getUsersDetails error:"+error.toString());
             }
         });

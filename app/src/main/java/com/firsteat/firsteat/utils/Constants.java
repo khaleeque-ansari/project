@@ -21,6 +21,10 @@ import java.util.Date;
  * Created by touchmagics on 12/3/2015.
  */
 public class Constants {
+    //Development server http://itfeathers.com/firsteat.in/app/
+    //Live server http://www.firsteat.in/app/
+    private static final String BASE_URL="http://itfeathers.com/firsteat.in/app/";
+
     private static final String TAG = Constants.class.getSimpleName();
     private static final String GOOGLE_BROWSER_KEY = "AIzaSyCQeMJ_iTUeitPnr71dHMFgK_T6ZXj1BMo";
     public static final String FE_EMAIL = "contact@firsteat.in";
@@ -33,34 +37,35 @@ public class Constants {
     public static boolean test=true;
     public static String SENDER_ID="564217570465";
     public static final String URL_TEST="http://www.itfeathers.com/firsteat/testjson.php";
-    public static final String URL_LOCATION="http://www.firsteat.in/app/index.php/ws/get/all/locations";
-    public static final String URL_KITCHENS="http://www.firsteat.in/app/index.php/ws/kitchens/all";
-    public static final String URL_MENU_ALL_ALACARTE="http://www.firsteat.in/app/index.php/ws/menu/all";
-    public static final String URL_REGISTER_USER="http://www.firsteat.in/app/index.php/ws/register/user?";
-    public static final String URL_LOGIN="http://www.firsteat.in/app/index.php/ws/verify/user?";
-    public static final String URL_USERS_FAV_MENU="http://www.firsteat.in/app/index.php/ws/user/favorite/menu/";
-    public static final String URL_USERS_FAV_MENU_UPLOAD="http://www.firsteat.in/app/index.php/ws/menu/user/favorite?user=";
-    public static final String URL_USERS_ADDRESSES="http://www.firsteat.in/app/index.php/ws/users/address/list/";
-    public static final String URL_UPLOAD_ADDRESS="http://www.firsteat.in/app/index.php/ws/users/address/add?user=";
-    public static final String URL_ADD_NEW_ORDER="http://www.firsteat.in/app/index.php/ws/orders/add/new/";
-    public static final String URL_ORDER_ITEM ="http://www.firsteat.in/app/index.php/ws/orders/add/new/item/";
-    public static final String URL_ORDER_OFFER ="http://www.firsteat.in/app/index.php/ws/orders/add/menu/offers/";
-    public static final String URL_UPDATE_ORDER_ITEM ="http://www.firsteat.in/app/index.php/ws/orders/update/";
-    public static final String URL_ORDER_HISTORY="http://www.firsteat.in/app/index.php/ws/users/orders/all/";
-    public static final String URL_FEEDBACK="http://www.firsteat.in/app/index.php/ws/user/feedback/";
-    public static final String URL_COUPOUN_VALIDATION="http://www.firsteat.in/app/index.php/ws/orders/coupon/apply?coupon=";
-    public static final String URL_GET_REEDEAM_POINT="http://www.firsteat.in/app/index.php/ws/users/points/all/";
-    public static final String URL_USERS_DETAIL="http://www.firsteat.in/app/index.php/ws/users/details/all/";
-    public static final String URL_DELIVERY_LOCATIONS="http://www.firsteat.in/app/index.php/ws/locations/delivery/all";
-    public static final String URL_TIME_SLOTS="http://www.firsteat.in/app/index.php/ws/kitchen/slots?d=";
-    public static final String URL_SPECIAL_NOTIFICATION="http://www.firsteat.in/app/index.php/ws/notifications/special";
+    public static final String URL_LOCATION=BASE_URL+"index.php/ws/get/all/locations";
+    public static final String URL_KITCHENS=BASE_URL+"index.php/ws/kitchens/all";
+    public static final String URL_MENU_ALL_ALACARTE=BASE_URL+"index.php/ws/menu/all?d=";
+    public static final String URL_REGISTER_USER=BASE_URL+"index.php/ws/register/user?";
+    public static final String URL_LOGIN=BASE_URL+"index.php/ws/verify/user?";
+    public static final String URL_USERS_FAV_MENU=BASE_URL+"index.php/ws/user/favorite/menu/";
+    public static final String URL_USERS_FAV_MENU_UPLOAD=BASE_URL+"index.php/ws/menu/user/favorite?user=";
+    public static final String URL_USERS_ADDRESSES=BASE_URL+"index.php/ws/users/address/list/";
+    public static final String URL_UPLOAD_ADDRESS=BASE_URL+"index.php/ws/users/address/add?user=";
+    public static final String URL_ADD_NEW_ORDER=BASE_URL+"index.php/ws/orders/add/new/";
+    public static final String URL_ORDER_ITEM =BASE_URL+"index.php/ws/orders/add/new/item/";
+    public static final String URL_ORDER_OFFER =BASE_URL+"index.php/ws/orders/add/menu/offers/";
+    public static final String URL_UPDATE_ORDER_ITEM =BASE_URL+"index.php/ws/orders/update/";
+    public static final String URL_ORDER_HISTORY=BASE_URL+"index.php/ws/users/orders/all/";
+    public static final String URL_FEEDBACK=BASE_URL+"index.php/ws/user/feedback/";
+    public static final String URL_COUPOUN_VALIDATION=BASE_URL+"index.php/ws/orders/coupon/apply?coupon=";
+    public static final String URL_GET_REEDEAM_POINT=BASE_URL+"index.php/ws/users/points/all/";
+    public static final String URL_USERS_DETAIL=BASE_URL+"index.php/ws/users/details/all/";
+    public static final String URL_DELIVERY_LOCATIONS=BASE_URL+"index.php/ws/locations/delivery/all";
+    public static final String URL_TIME_SLOTS=BASE_URL+"index.php/ws/kitchen/slots?d=";
+    public static final String URL_SPECIAL_NOTIFICATION=BASE_URL+"index.php/ws/notifications/special";
     public static final String URL_GOOGLE_GEOCODE="https://maps.googleapis.com/maps/api/geocode/json?address=";
-    public static final String URL_REDEEM_POINT="http://www.firsteat.in/app/index.php/ws/points/redeem/";
-    public static final String URL_FIRST_SERVICE="http://www.firsteat.in/app/index.php/ws/first/app?devid=";
-    private static final String URL_ORDER_DETAILS = "http://www.firsteat.in/app/index.php/ws/user/order/details/";
-    private static final String URL_UPDATE_USER_PROFILE = "http://www.firsteat.in/app/index.php/ws/user/profile/update?name=";
-    private static final String URL_CHECK_MOBILE = "http://www.firsteat.in/app/index.php/ws/mobile/check?mobile=";
-    private static final String URL_CHECK_EMAIL = "http://www.firsteat.in/app/index.php/ws/email/check?email=";
+    public static final String URL_REDEEM_POINT=BASE_URL+"index.php/ws/points/redeem/";
+    public static final String URL_FIRST_SERVICE=BASE_URL+"index.php/ws/first/app?devid=";
+    private static final String URL_ORDER_DETAILS = BASE_URL+"index.php/ws/user/order/details/";
+    private static final String URL_UPDATE_USER_PROFILE = BASE_URL+"index.php/ws/user/profile/update?name=";
+    private static final String URL_CHECK_MOBILE = BASE_URL+"index.php/ws/mobile/check?mobile=";
+    private static final String URL_CHECK_EMAIL = BASE_URL+"index.php/ws/email/check?email=";
+    private static final String URL_ROLLBACK_ORDER = "http://www.dev.firsteat.com/index.php/ws/orders/rollback/";
     public static Location GPS_LOCATION;
 
 
@@ -79,6 +84,17 @@ public class Constants {
             e.printStackTrace();
         }
         return null;
+    }
+    /*
+    * Alacarte  menu all
+    * */
+    public static String getUrlMenuAllAlacarte(String date){
+        String UrlMenuAllAlacarte=""+URL_MENU_ALL_ALACARTE+date;
+        UrlMenuAllAlacarte.trim();
+        URL url;
+        url=convertToUrl(UrlMenuAllAlacarte);
+        Log.d(TAG, "UrlMenuAllAlacarte url: " + url.toString());
+        return url.toString();
     }
     /*
     * Users favorite menu
@@ -325,11 +341,12 @@ public class Constants {
     /*
  * getUrlCoupounValidation for validating coupouns
  * */
-    public static String getUrlCoupounValidation(String coupounCode,String userID,String totalAmount,String menuIds){
+    public static String getUrlCoupounValidation(String coupounCode,String userID,String totalAmount,String menuIds,String itemQtys){
         String urlCoupounValidation= URL_COUPOUN_VALIDATION +coupounCode+
                 "&user="+userID+
                 "&amt="+totalAmount+
-                "&menu="+menuIds;
+                "&menu="+menuIds+
+                "&qty="+itemQtys;
         Log.d(TAG,"urlCoupounValidation "+urlCoupounValidation );
         urlCoupounValidation.trim();
         URL url;
@@ -496,6 +513,19 @@ public class Constants {
         URL url;
         url=convertToUrl(urlCheckEmail);
         Log.d(TAG, "urlCheckEmail url: " + url.toString());
+        return url.toString();
+    }
+
+    /*
+   * Rollback order
+   * */
+    public static String getUrlRollbackOrder(String orderid){
+        String UrlRollbackOrder= URL_ROLLBACK_ORDER +orderid;
+        Log.d(TAG,"UrlRollbackOrder "+UrlRollbackOrder );
+        UrlRollbackOrder.trim();
+        URL url;
+        url=convertToUrl(UrlRollbackOrder);
+        Log.d(TAG, "UrlRollbackOrder url: " + url.toString());
         return url.toString();
     }
 

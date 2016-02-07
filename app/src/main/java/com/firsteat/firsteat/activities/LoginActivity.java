@@ -340,6 +340,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(LoginActivity.this,"server error",Toast.LENGTH_SHORT).show();
                 Log.d(TAG,"checkEmailExistence :error"+error.toString());
 
             }
@@ -460,6 +461,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onErrorResponse(VolleyError error) {
                 pd.dismiss();
+                Toast.makeText(LoginActivity.this,"Server error",Toast.LENGTH_LONG).show();
                 Log.d(TAG,"Registration error :"+error.toString());
             }
         });
@@ -617,6 +619,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onErrorResponse(VolleyError error) {
                 pd.dismiss();
+                Toast.makeText(LoginActivity.this,"Server error",Toast.LENGTH_LONG).show();
                 Log.d(TAG,"login volley error: "+error.toString());
             }
         });
@@ -657,6 +660,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(LoginActivity.this,"Server error",Toast.LENGTH_LONG).show();
                 Log.d(TAG,"getUsersDetails error:"+error.toString());
             }
         });
@@ -837,17 +841,17 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         public void onClick(View v) {
             boolean error=false;
             EditText mMobileNumber= (EditText) dialog.findViewById(R.id.edtMobileReg);
-            EditText mNewPass= (EditText) dialog.findViewById(R.id.edtNewPass);
-            EditText mConfirmNewPass= (EditText) dialog.findViewById(R.id.edtConfirmNewPass);
+//            EditText mNewPass= (EditText) dialog.findViewById(R.id.edtNewPass);
+//            EditText mConfirmNewPass= (EditText) dialog.findViewById(R.id.edtConfirmNewPass);
 
             String mMobile = mMobileNumber.getText().toString();
-            String mPass = mNewPass.getText().toString();
-            String mConfirmPass = mNewPass.getText().toString();
+//            String mPass = mNewPass.getText().toString();
+//            String mConfirmPass = mNewPass.getText().toString();
             //check for mandetory fields
             int[] mandetoryFields={
                     R.id.edtMobileReg,
-                    R.id.edtNewPass,
-                    R.id.edtConfirmNewPass
+//                    R.id.edtNewPass,
+//                    R.id.edtConfirmNewPass
             };
             for(int id :mandetoryFields){
                 EditText edt= (EditText) dialog.findViewById(id);
@@ -863,15 +867,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 if(mMobileNumber.getText().toString().trim().length()<10||
                         mMobileNumber.getText().toString().trim().length()>10){
                     mMobileNumber.setError("Please enter a 10 digit number");
-                }else if(!(mNewPass.getText().toString().trim().equalsIgnoreCase(mConfirmNewPass.getText().toString().trim()))){
-                    mConfirmNewPass.setError("Password do not match");
                 }else{
                     preEditor.putString(TagsPreferences.PROFILE_NUMBER, mMobileNumber.getText().toString().trim()).commit();
                     Log.d(TAG, "mobile number " + prefs.getString(TagsPreferences.PROFILE_NUMBER, ""));
                     registerUser(name,
                             prefs.getString(TagsPreferences.PROFILE_NUMBER, ""),
                             email,
-                            mNewPass.getText().toString().trim());
+                            "12345");
                     dialog.dismiss();
                 }
             }

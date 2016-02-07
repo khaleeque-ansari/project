@@ -60,6 +60,7 @@ import com.firsteat.firsteat.utils.TagsPreferences;
 
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
@@ -202,6 +203,7 @@ public class MainActivity extends AppCompatActivity
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(MainActivity.this,"Server error",Toast.LENGTH_LONG).show();
                 Log.d(TAG,"download location response :"+error.toString());
             }
         });
@@ -240,7 +242,7 @@ public class MainActivity extends AppCompatActivity
 
                     if (position != 0) {
                         prefs.edit().putString(TagsPreferences.ADDRESS_BASE_LINE, addre.get(position)).commit();
-                        deiveryLocationDataEntry = deliveryLocations.getData().get(position-1);
+                        deiveryLocationDataEntry = deliveryLocations.getData().get(position - 1);
                         //alter preference to do not show area dialog
                         prefs.edit().putBoolean(TagsPreferences.FLAG_MSG_OUT_OF_SERVICE_AREA, false).commit();
                     }
@@ -248,16 +250,16 @@ public class MainActivity extends AppCompatActivity
                 } else {//inside service area
                     prefs.edit().putString(TagsPreferences.ADDRESS_BASE_LINE, addre.get(position)).commit();
 
-                    if(position==0){
+                    if (position == 0) {
                         //alter preference to do not show area dialog
                         prefs.edit().putBoolean(TagsPreferences.FLAG_MSG_OUT_OF_SERVICE_AREA, true).commit();
                         deiveryLocationDataEntry = new DeliveryLocations.DataEntity();
-                        deiveryLocationDataEntry.setLatitude(prefs.getString(TagsPreferences.LOCATION_MY_LATITUDE,""));
-                        deiveryLocationDataEntry.setLatitude(prefs.getString(TagsPreferences.LOCATION_MY_LONGITUDE,""));
+                        deiveryLocationDataEntry.setLatitude(prefs.getString(TagsPreferences.LOCATION_MY_LATITUDE, ""));
+                        deiveryLocationDataEntry.setLatitude(prefs.getString(TagsPreferences.LOCATION_MY_LONGITUDE, ""));
                         deiveryLocationDataEntry.setLatitude(prefs.getString(TagsPreferences.LOCATION_MY_ADDRESS, ""));
 
-                    }else{
-                        deiveryLocationDataEntry = deliveryLocations.getData().get(position-1);
+                    } else {
+                        deiveryLocationDataEntry = deliveryLocations.getData().get(position - 1);
                     }
                 }
             }
@@ -347,22 +349,25 @@ public class MainActivity extends AppCompatActivity
 //                    startActivity(tomain);
 //                }
 //                break;
-            case R.id.nav_logout:
-                if(prefs.getBoolean(TagsPreferences.LOGIN_STATUS,false)){
-                    prefs.edit().putBoolean(TagsPreferences.LOGIN_STATUS,false).commit();
-                    DialogUtils.showDialog(MainActivity.this, "You are successfully logged out you'll need to Login again to order anything");
-                    prefs.edit().putString(TagsPreferences.PROFILE_NAME, "Guest").commit();
-                    prefs.edit().putString(TagsPreferences.PROFILE_NAME,"Mobile").commit();
-                    prefs.edit().putBoolean(TagsPreferences.FLAG_DOWNLOAD_USERS_ADDRESS, false).commit();
-                    prefs.edit().putString(TagsPreferences.ADDRESS_LINE_0, "Address line 0").commit();
-                    prefs.edit().putString(TagsPreferences.ADDRESS_LINE_0, "Address line 1").commit();
-                    prefs.edit().putString(TagsPreferences.ADDRESS_LINE_0, "Address line 2").commit();
-                    txtHeaderName.setText("Hello! Guest");
-                    txtHeaderPhone.setText("Mobile");
-
-                }else
-                    DialogUtils.showDialog(MainActivity.this,"You are not logged in");
-                break;
+            /*
+            * Logout commented for the release
+            * */
+//            case R.id.nav_logout:
+//                if(prefs.getBoolean(TagsPreferences.LOGIN_STATUS,false)){
+//                    prefs.edit().putBoolean(TagsPreferences.LOGIN_STATUS,false).commit();
+//                    DialogUtils.showDialog(MainActivity.this, "You are successfully logged out you'll need to Login again to order anything");
+//                    prefs.edit().putString(TagsPreferences.PROFILE_NAME, "Guest").commit();
+//                    prefs.edit().putString(TagsPreferences.PROFILE_NAME,"Mobile").commit();
+//                    prefs.edit().putBoolean(TagsPreferences.FLAG_DOWNLOAD_USERS_ADDRESS, false).commit();
+//                    prefs.edit().putString(TagsPreferences.ADDRESS_LINE_0, "Address line 0").commit();
+//                    prefs.edit().putString(TagsPreferences.ADDRESS_LINE_0, "Address line 1").commit();
+//                    prefs.edit().putString(TagsPreferences.ADDRESS_LINE_0, "Address line 2").commit();
+//                    txtHeaderName.setText("Hello! Guest");
+//                    txtHeaderPhone.setText("Mobile");
+//
+//                }else
+//                    DialogUtils.showDialog(MainActivity.this,"You are not logged in");
+//                break;
 
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -371,7 +376,7 @@ public class MainActivity extends AppCompatActivity
     }
 
         public static void hideToolbarLayout() {
-        Log.d(TAG,"hideToolbarLayout");
+        Log.d(TAG, "hideToolbarLayout");
         Activity activity=(Activity)context;
         View view = activity.findViewById(R.id.tollbarMainCustom);
         view.setVisibility(View.GONE);
@@ -443,7 +448,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void sendFeedback(String feedback, float rating) {
-        String url= Constants.getUrlFeedback(prefs.getString(TagsPreferences.PROFILE_USER_ID,"0"),feedback,String.valueOf(rating));
+        String url= Constants.getUrlFeedback(prefs.getString(TagsPreferences.PROFILE_USER_ID, "0"), feedback, String.valueOf(rating));
         final ProgressDialog pd=new ProgressDialog(MainActivity.this);
         pd.setCancelable(false);
         pd.setMessage("sending your feedback .......");
@@ -458,6 +463,7 @@ public class MainActivity extends AppCompatActivity
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(MainActivity.this,"Server error",Toast.LENGTH_LONG).show();
                 pd.dismiss();
                 Log.d(TAG,"requestFeedback error"+error.toString());
             }
@@ -473,6 +479,8 @@ public class MainActivity extends AppCompatActivity
         Log.d(TAG, "Current version code: " + currentVersionCode);
 
         if(currentVersionCode>oldVersionCode){
+            //clear cache
+
             startActivity(new Intent(MainActivity.this,ProductTourActivity.class));
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             Constants.putAppPrefInt(this, "version_code", currentVersionCode);
@@ -482,4 +490,7 @@ public class MainActivity extends AppCompatActivity
 //                startActivity(new Intent(MainActivity.this,LoginActivity.class));
 //        }
     }
+
+
+
 }

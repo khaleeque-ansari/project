@@ -29,27 +29,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MenuAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/adapters/MenuAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="74" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
-              <folding>
-                <element signature="e#16478#16935#0" expanded="true" />
-                <element signature="e#16934#16935#0" expanded="true" />
-                <element signature="e#16937#17348#0" expanded="true" />
-                <element signature="e#17347#17348#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16179001">
-              <caret line="145" column="12" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="321" column="39" selection-start-line="321" selection-start-column="39" selection-end-line="321" selection-end-column="39" />
+              <folding>
+                <element signature="docComment;class#LoginActivity#0" expanded="false" />
+                <element signature="docComment;field#REQUEST_READ_CONTACTS#0;class#LoginActivity#0" expanded="false" />
+                <element signature="docComment;field#DUMMY_CREDENTIALS#0;class#LoginActivity#0" expanded="false" />
+                <element signature="docComment;field#mAuthTask#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#onCancel#0;class#5989:6957" expanded="false" />
+                <element signature="method#onError#0;class#5989:6957" expanded="false" />
+                <element signature="method#onPostCreate#0;class#LoginActivity#0" expanded="false" />
+                <element signature="e#12032#12084#0" expanded="false" />
+                <element signature="class#15219:15369" expanded="false" />
+                <element signature="method#onClick#0;class#15219:15369" expanded="false" />
+                <element signature="method#dialogForgotPassword#0;class#LoginActivity#0" expanded="false" />
+                <element signature="class#16184:16367" expanded="false" />
+                <element signature="method#onClick#0;class#16184:16367" expanded="false" />
+                <element signature="class#16418:16568" expanded="false" />
+                <element signature="method#onClick#0;class#16418:16568" expanded="false" />
+                <element signature="e#18063#18180#0" expanded="false" />
+                <element signature="method#updateNavHeader#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#populateAutoComplete#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#mayRequestContacts#0;class#LoginActivity#0" expanded="false" />
+                <element signature="e#19987#20049#0" expanded="false" />
+                <element signature="docComment;method#onRequestPermissionsResult#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#onRequestPermissionsResult#0;class#LoginActivity#0" expanded="false" />
+                <element signature="docComment;method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
+                <element signature="e#23120#23182#0" expanded="false" />
+                <element signature="e#23291#23352#0" expanded="false" />
+                <element signature="method#isEmailValid#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#isPasswordValid#0;class#LoginActivity#0" expanded="false" />
+                <element signature="docComment;method#showProgress#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#showProgress#0;class#LoginActivity#0" expanded="false" />
+                <element signature="e#28462#28532#0" expanded="false" />
+                <element signature="e#29708#29774#0" expanded="false" />
+                <element signature="method#onCreateLoader#0;class#LoginActivity#0" expanded="false" />
+                <element signature="e#30609#30672#0" expanded="false" />
+                <element signature="method#onLoadFinished#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#onLoaderReset#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#onActivityResult#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#addEmailsToAutoComplete#0;class#LoginActivity#0" expanded="false" />
+                <element signature="class#ProfileQuery#0;class#LoginActivity#0" expanded="false" />
+                <element signature="docComment;class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+                <element signature="class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#UserLoginTask#0;class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#doInBackground#0;class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#onPostExecute#0;class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#onCancelled#0;class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,23 +88,166 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="477" column="78" selection-start-line="477" selection-start-column="78" selection-end-line="477" selection-end-column="78" />
+              <caret line="191" column="40" selection-start-line="191" selection-start-column="40" selection-end-line="191" selection-end-column="40" />
+              <folding>
+                <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#6380#6459#0" expanded="false" />
+                <element signature="method#updateLocation#0;class#MainActivity#0" expanded="false" />
+                <element signature="class#9077:11208" expanded="false" />
+                <element signature="method#onItemSelected#0;class#9077:11208" expanded="false" />
+                <element signature="e#9432#9453#0" expanded="false" />
+                <element signature="method#onNothingSelected#0;class#9077:11208" expanded="false" />
+                <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#12013#12120#0" expanded="false" />
+                <element signature="e#14262#14300#0" expanded="false" />
+                <element signature="e#15227#15262#0" expanded="false" />
+                <element signature="method#showToolbarLayout#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#18061#18116#0" expanded="false" />
+                <element signature="class#CustomListener#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onClick#0;class#CustomListener#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#21495#21510#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/utils/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.4444447">
+              <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="Summary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/Summary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+              <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfirmOrder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/ConfirmOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Splash.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/Splash.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="393" column="37" selection-start-line="393" selection-start-column="37" selection-end-line="393" selection-end-column="37" />
+              <folding>
+                <element signature="e#11545#11845#0" expanded="true" />
+                <element signature="e#11844#11845#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cart.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/Cart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="171" column="35" selection-start-line="171" selection-start-column="35" selection-end-line="171" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/SignUp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="343" column="37" selection-start-line="343" selection-start-column="37" selection-end-line="343" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Alacarte.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/Alacarte.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="371" column="44" selection-start-line="371" selection-start-column="44" selection-end-line="371" selection-end-column="44" />
+              <folding>
+                <element signature="docComment;class#Alacarte#0" expanded="false" />
+                <element signature="method#Alacarte#0;class#Alacarte#0" expanded="false" />
+                <element signature="method#onCreate#0;class#Alacarte#0" expanded="false" />
+                <element signature="method#onCreateView#0;class#Alacarte#0" expanded="false" />
+                <element signature="class#3817:4895" expanded="false" />
+                <element signature="method#onItemSelected#0;class#3817:4895" expanded="false" />
+                <element signature="method#onNothingSelected#0;class#3817:4895" expanded="false" />
+                <element signature="e#4970#5045#0" expanded="false" />
+                <element signature="e#6004#6024#0" expanded="false" />
+                <element signature="e#7009#7052#0" expanded="false" />
+                <element signature="method#fetchAndUpdateDays#0;class#Alacarte#0" expanded="false" />
+                <element signature="method#onItemSelected#0;class#Alacarte#0" expanded="false" />
+                <element signature="e#8699#8741#0" expanded="false" />
+                <element signature="method#onNothingSelected#0;class#Alacarte#0" expanded="false" />
+                <element signature="e#12413#12541#0" expanded="false" />
+                <element signature="method#updateMenuWith#0;class#Alacarte#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreConfirmOrder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/PreConfirmOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0242718">
+              <caret line="611" column="96" selection-start-line="611" selection-start-column="96" selection-end-line="611" selection-end-column="96" />
+              <folding>
+                <element signature="method#onCreate#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="e#3076#3128#0" expanded="false" />
+                <element signature="method#calMainNOfferSep#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="e#6831#6937#0" expanded="false" />
+                <element signature="method#addNewOrder#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#addOrderItems#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#rollBackOrder#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#addOffers#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#updateOrder#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#fetchMenuItemIdsAndQttys#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#convertMenuIdsToString#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#getKitechId#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#selectedChangeFor#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#switchSelection#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#getRedeemPoint#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="e#22370#22445#0" expanded="false" />
+                <element signature="e#22918#23007#0" expanded="false" />
+                <element signature="method#updateTotalAmountAfterRedeem#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="e#24592#24677#0" expanded="false" />
+                <element signature="e#27120#27248#0" expanded="false" />
+                <element signature="method#calculateTotalAmountWithTEAM250#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#calculateTotalAmountWithCoupon#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="e#30799#30911#0" expanded="false" />
+                <element signature="e#31187#31208#0" expanded="false" />
+                <element signature="method#onCreateOptionsMenu#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#onBackPressed#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#onClick#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="method#dummyRedeem#0;class#PreConfirmOrder#0" expanded="false" />
+                <element signature="e#34507#34546#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../Documents/firsteat.jks" />
+    <option name="KEY_ALIAS" value="firsteat" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -528,9 +701,9 @@
                 <option name="name" value="prepareComAndroidSupportAppcompatV72221Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:cardview-v7:23.1.0" />
+                <option name="description" value="Prepare com.android.support:cardview-v7:23.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportCardviewV72310Library" />
+                <option name="name" value="prepareComAndroidSupportCardviewV72311Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:design:22.2.1" />
@@ -1317,9 +1490,9 @@
                 <option name="name" value="prepareComAndroidSupportAppcompatV72221Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:cardview-v7:23.1.0" />
+                <option name="description" value="Prepare com.android.support:cardview-v7:23.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportCardviewV72310Library" />
+                <option name="name" value="prepareComAndroidSupportCardviewV72311Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:design:22.2.1" />
@@ -1724,7 +1897,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4353651044000" />
+        <entry key="$PROJECT_DIR$" value="4353745469000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1970,7 +2143,7 @@
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/22.2.1/appcompat-v7-22.2.1.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/design/22.2.1/design-22.2.1.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/22.2.1/recyclerview-v7-22.2.1.aar" />
-                            <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/cardview-v7/23.1.0/cardview-v7-23.1.0.aar" />
+                            <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/cardview-v7/23.1.1/cardview-v7-23.1.1.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.5/686c608d1805b6d4d425ec4459e88164ffc85870/gson-2.5.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.neavo/volley/2014.12.09/1f9b35e0b2e9bc307648579409dea2d93de8573f/volley-2014.12.09.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar" />
@@ -2146,9 +2319,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/app/AppController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_facebook_registration.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/Favorites.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/AddressActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/MyOrder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/Feedback.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/Refer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/Alacarte.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/SignUp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/Cart.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/ConfirmOrder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/Summary.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/Splash.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/PreConfirmOrder.java" />
       </list>
     </option>
   </component>
@@ -2163,9 +2355,27 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="725" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AndroidLintHardcodedDebugMode</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2190,10 +2400,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2216,19 +2425,104 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EatFirst" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firsteat" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EatFirst" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firsteat" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EatFirst" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firsteat" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EatFirst" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firsteat" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="recentsLimit" value="5" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="FA474MZ00959" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_22_x86" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Documents/firsteat.jks" />
+    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.BuildType" value="release" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2237,6 +2531,36 @@
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
@@ -2294,6 +2618,11 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -2378,6 +2707,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="28c142d6-ee04-4d13-bf68-b9eba1e74b3c" name="Default" comment="" />
@@ -2388,29 +2720,39 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="725" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3809524" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19951534" sideWeight="0.50574714" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25444266" sideWeight="0.53418803" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30775446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32577905" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48932678" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.66855526" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19951534" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25444266" sideWeight="0.46581197" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -2425,15 +2767,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/adapters/MenuAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/app/AppController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="74" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
+          <caret line="62" column="43" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="43" />
           <folding>
-            <element signature="e#16478#16935#0" expanded="true" />
-            <element signature="e#16934#16935#0" expanded="true" />
-            <element signature="e#16937#17348#0" expanded="true" />
-            <element signature="e#17347#17348#0" expanded="true" />
+            <element signature="method#getRequestQueue#0;class#AppController#0" expanded="false" />
+            <element signature="method#getImageLoader#0;class#AppController#0" expanded="false" />
+            <element signature="method#addToRequestQueue#1;class#AppController#0" expanded="false" />
+            <element signature="method#cancelPendingRequests#0;class#AppController#0" expanded="false" />
+            <element signature="method#checkClearCache#0;class#AppController#0" expanded="false" />
+            <element signature="method#clearApplicationData#0;class#AppController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2441,7 +2785,58 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="477" column="78" selection-start-line="477" selection-start-column="78" selection-end-line="477" selection-end-column="78" />
+          <caret line="504" column="9" selection-start-line="504" selection-start-column="9" selection-end-line="504" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/Splash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="488" column="0" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1039" column="75" selection-start-line="1039" selection-start-column="75" selection-end-line="1039" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2454,11 +2849,501 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/adapters/MenuAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="74" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16179001">
+        <state vertical-scroll-proportion="0.0">
           <caret line="145" column="12" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/app/AppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="43" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="43" />
+          <folding>
+            <element signature="method#getRequestQueue#0;class#AppController#0" expanded="false" />
+            <element signature="method#getImageLoader#0;class#AppController#0" expanded="false" />
+            <element signature="method#addToRequestQueue#1;class#AppController#0" expanded="false" />
+            <element signature="method#cancelPendingRequests#0;class#AppController#0" expanded="false" />
+            <element signature="method#checkClearCache#0;class#AppController#0" expanded="false" />
+            <element signature="method#clearApplicationData#0;class#AppController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="504" column="9" selection-start-line="504" selection-start-column="9" selection-end-line="504" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/Splash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="488" column="0" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/adapters/MenuAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="74" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="145" column="12" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/app/AppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="43" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="43" />
+          <folding>
+            <element signature="method#getRequestQueue#0;class#AppController#0" expanded="false" />
+            <element signature="method#getImageLoader#0;class#AppController#0" expanded="false" />
+            <element signature="method#addToRequestQueue#1;class#AppController#0" expanded="false" />
+            <element signature="method#cancelPendingRequests#0;class#AppController#0" expanded="false" />
+            <element signature="method#checkClearCache#0;class#AppController#0" expanded="false" />
+            <element signature="method#clearApplicationData#0;class#AppController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1039" column="75" selection-start-line="1039" selection-start-column="75" selection-end-line="1039" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/utils/TagsPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/NavigationHeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar!/android/support/design/widget/NavigationView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77797836">
+          <caret line="250" column="21" selection-start-line="250" selection-start-column="21" selection-end-line="250" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_facebook_registration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7586207">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="43" />
+          <folding>
+            <element signature="e#697#1451#0" expanded="false" />
+            <element signature="e#979#1394#0" expanded="false" />
+            <element signature="e#2708#2986#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/app/AppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="33" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="33" />
+          <folding>
+            <element signature="e#3803#3804#0" expanded="true" />
+            <element signature="e#3835#3836#0" expanded="true" />
+            <element signature="method#getRequestQueue#0;class#AppController#0" expanded="false" />
+            <element signature="method#getImageLoader#0;class#AppController#0" expanded="false" />
+            <element signature="method#addToRequestQueue#1;class#AppController#0" expanded="false" />
+            <element signature="method#cancelPendingRequests#0;class#AppController#0" expanded="false" />
+            <element signature="method#clearApplicationData#0;class#AppController#0" expanded="false" />
+            <element signature="method#deleteDir#0;class#AppController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/Favorites.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
+          <folding>
+            <element signature="e#5306#5560#0" expanded="true" />
+            <element signature="e#5559#5560#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/adapters/FavMenuAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="162" column="11" selection-start-line="162" selection-start-column="11" selection-end-line="162" selection-end-column="11" />
+          <folding>
+            <element signature="e#6805#7216#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/adapters/MenuAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="354" column="30" selection-start-line="354" selection-start-column="30" selection-end-line="354" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/AddressActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="181" column="40" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
+          <folding>
+            <element signature="method#onCreateOptionsMenu#0;class#AddressActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#AddressActivity#0" expanded="false" />
+            <element signature="docComment;method#createExampleDialog#0;class#AddressActivity#0" expanded="false" />
+            <element signature="method#createExampleDialog#0;class#AddressActivity#0" expanded="false" />
+            <element signature="class#CustomListener#0;class#AddressActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#CustomListener#0;class#AddressActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/MyOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="41" selection-start-line="97" selection-start-column="41" selection-end-line="97" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/Feedback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="98" column="44" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/Refer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="38" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/SignUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="343" column="37" selection-start-line="343" selection-start-column="37" selection-end-line="343" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/fragments/Alacarte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="371" column="44" selection-start-line="371" selection-start-column="44" selection-end-line="371" selection-end-column="44" />
+          <folding>
+            <element signature="docComment;class#Alacarte#0" expanded="false" />
+            <element signature="method#Alacarte#0;class#Alacarte#0" expanded="false" />
+            <element signature="method#onCreate#0;class#Alacarte#0" expanded="false" />
+            <element signature="method#onCreateView#0;class#Alacarte#0" expanded="false" />
+            <element signature="class#3817:4895" expanded="false" />
+            <element signature="method#onItemSelected#0;class#3817:4895" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#3817:4895" expanded="false" />
+            <element signature="e#4970#5045#0" expanded="false" />
+            <element signature="e#6004#6024#0" expanded="false" />
+            <element signature="e#7009#7052#0" expanded="false" />
+            <element signature="method#fetchAndUpdateDays#0;class#Alacarte#0" expanded="false" />
+            <element signature="method#onItemSelected#0;class#Alacarte#0" expanded="false" />
+            <element signature="e#8699#8741#0" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#Alacarte#0" expanded="false" />
+            <element signature="e#12413#12541#0" expanded="false" />
+            <element signature="method#updateMenuWith#0;class#Alacarte#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="191" column="40" selection-start-line="191" selection-start-column="40" selection-end-line="191" selection-end-column="40" />
+          <folding>
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6380#6459#0" expanded="false" />
+            <element signature="method#updateLocation#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#9077:11208" expanded="false" />
+            <element signature="method#onItemSelected#0;class#9077:11208" expanded="false" />
+            <element signature="e#9432#9453#0" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#9077:11208" expanded="false" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#12013#12120#0" expanded="false" />
+            <element signature="e#14262#14300#0" expanded="false" />
+            <element signature="e#15227#15262#0" expanded="false" />
+            <element signature="method#showToolbarLayout#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18061#18116#0" expanded="false" />
+            <element signature="class#CustomListener#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#CustomListener#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#21495#21510#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="171" column="35" selection-start-line="171" selection-start-column="35" selection-end-line="171" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/Summary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/ConfirmOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="321" column="39" selection-start-line="321" selection-start-column="39" selection-end-line="321" selection-end-column="39" />
+          <folding>
+            <element signature="docComment;class#LoginActivity#0" expanded="false" />
+            <element signature="docComment;field#REQUEST_READ_CONTACTS#0;class#LoginActivity#0" expanded="false" />
+            <element signature="docComment;field#DUMMY_CREDENTIALS#0;class#LoginActivity#0" expanded="false" />
+            <element signature="docComment;field#mAuthTask#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#onCancel#0;class#5989:6957" expanded="false" />
+            <element signature="method#onError#0;class#5989:6957" expanded="false" />
+            <element signature="method#onPostCreate#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#12032#12084#0" expanded="false" />
+            <element signature="class#15219:15369" expanded="false" />
+            <element signature="method#onClick#0;class#15219:15369" expanded="false" />
+            <element signature="method#dialogForgotPassword#0;class#LoginActivity#0" expanded="false" />
+            <element signature="class#16184:16367" expanded="false" />
+            <element signature="method#onClick#0;class#16184:16367" expanded="false" />
+            <element signature="class#16418:16568" expanded="false" />
+            <element signature="method#onClick#0;class#16418:16568" expanded="false" />
+            <element signature="e#18063#18180#0" expanded="false" />
+            <element signature="method#updateNavHeader#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#populateAutoComplete#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#mayRequestContacts#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#19987#20049#0" expanded="false" />
+            <element signature="docComment;method#onRequestPermissionsResult#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#onRequestPermissionsResult#0;class#LoginActivity#0" expanded="false" />
+            <element signature="docComment;method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#23120#23182#0" expanded="false" />
+            <element signature="e#23291#23352#0" expanded="false" />
+            <element signature="method#isEmailValid#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#isPasswordValid#0;class#LoginActivity#0" expanded="false" />
+            <element signature="docComment;method#showProgress#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#showProgress#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#28462#28532#0" expanded="false" />
+            <element signature="e#29708#29774#0" expanded="false" />
+            <element signature="method#onCreateLoader#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#30609#30672#0" expanded="false" />
+            <element signature="method#onLoadFinished#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#onLoaderReset#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#onActivityResult#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#addEmailsToAutoComplete#0;class#LoginActivity#0" expanded="false" />
+            <element signature="class#ProfileQuery#0;class#LoginActivity#0" expanded="false" />
+            <element signature="docComment;class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+            <element signature="class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#UserLoginTask#0;class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#onCancelled#0;class#UserLoginTask#0;class#LoginActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/Splash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="393" column="37" selection-start-line="393" selection-start-column="37" selection-end-line="393" selection-end-column="37" />
+          <folding>
+            <element signature="e#11545#11845#0" expanded="true" />
+            <element signature="e#11844#11845#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4444447">
+          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firsteat/firsteat/activities/PreConfirmOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0242718">
+          <caret line="611" column="96" selection-start-line="611" selection-start-column="96" selection-end-line="611" selection-end-column="96" />
+          <folding>
+            <element signature="method#onCreate#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="e#3076#3128#0" expanded="false" />
+            <element signature="method#calMainNOfferSep#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="e#6831#6937#0" expanded="false" />
+            <element signature="method#addNewOrder#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#addOrderItems#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#rollBackOrder#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#addOffers#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#updateOrder#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#fetchMenuItemIdsAndQttys#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#convertMenuIdsToString#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#getKitechId#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#selectedChangeFor#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#switchSelection#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#getRedeemPoint#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="e#22370#22445#0" expanded="false" />
+            <element signature="e#22918#23007#0" expanded="false" />
+            <element signature="method#updateTotalAmountAfterRedeem#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="e#24592#24677#0" expanded="false" />
+            <element signature="e#27120#27248#0" expanded="false" />
+            <element signature="method#calculateTotalAmountWithTEAM250#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#calculateTotalAmountWithCoupon#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="e#30799#30911#0" expanded="false" />
+            <element signature="e#31187#31208#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#onClick#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="method#dummyRedeem#0;class#PreConfirmOrder#0" expanded="false" />
+            <element signature="e#34507#34546#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
